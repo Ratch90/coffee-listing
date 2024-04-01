@@ -2,5 +2,5 @@
 build
 coverage
 
-# Ignore all HTML files:
-**/*.js
+# Ignore Tailwind config js file:
+tailwind.config.js
