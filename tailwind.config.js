@@ -25,6 +25,9 @@ module.exports = {
               'label': ['0.875rem','100%'],
               'small-text': ['0.625rem','100%'],
               'price-text': ['0.75rem','100%'],
+            },
+            backgroundImage: {
+             'cafe': "url('./assets/images/bg-cafe.jpg')",
             }
         }
     },
