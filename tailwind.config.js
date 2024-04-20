@@ -17,7 +17,7 @@ module.exports = {
                 }
             },
             fontFamily: {
-              'dm-sans': ["DM Sans", "sans-serif"],
+              'DM': ["DM Sans", "sans-serif"],
             },
             fontSize: {
               'heading': ['2rem','100%'],
@@ -28,6 +28,7 @@ module.exports = {
             },
             backgroundImage: {
              'cafe': "url('./assets/images/bg-cafe.jpg')",
+             'vector': "url('./assets/svg/vector.svg')",
             }
         }
     },
