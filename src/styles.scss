@@ -2,22 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    @font-face {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        font-optical-sizing: auto;
-        src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-    }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+@layer base {
     html * {
         @apply box-border;
     }
 
     html,
     body {
-        @apply h-full w-full bg-primary-eerie-black font-dm-sans text-body font-semibold;
+        @apply font-DM h-full w-full bg-primary-eerie-black text-body font-semibold;
     }
 }
