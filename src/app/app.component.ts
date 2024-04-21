@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoffeeShopInfoComponent } from './components/';
+import { HomeComponent } from './components/home/home.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [CoffeeShopInfoComponent, CommonModule],
+    imports: [HomeComponent],
     templateUrl: './app.component.html'
 })
 export class AppComponent {}
