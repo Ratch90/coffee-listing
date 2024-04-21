@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CoffeeListingService } from '../../../services/coffee-listing.service';
 
 @Component({
     selector: 'app-coffee-shop-info',

@@ -1,0 +1,12 @@
+<div class="flex min-h-screen flex-col">
+    <header class="h-72 w-full bg-cafe bg-cover bg-center bg-no-repeat"></header>
+    <main class="mx-28 -mt-24 rounded-3xl bg-primary-eerie-black-light">
+        <div class="mx-14 my-20 flex flex-col gap-y-8">
+            <app-coffee-shop-info></app-coffee-shop-info>
+            <div class="flex flex-col gap-y-5">
+                <app-tabs></app-tabs>
+                <app-coffees-list [coffeesList]="coffeesListState() === 'all' ? allCoffees() : availableCoffees()"></app-coffees-list>
+            </div>
+        </div>
+    </main>
+</div>
