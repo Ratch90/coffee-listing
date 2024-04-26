@@ -1,5 +1,11 @@
 <div class="flex flex-col gap-y-3">
-    <img [src]="coffee().image" class="h-full rounded-2xl" alt="coffee-background" />
+    <div class="h-40 w-64 rounded-2xl bg-cover bg-center bg-no-repeat" [ngStyle]="{ 'background-image': 'url(' + coffee().image + ')' }">
+        @if (coffee().popular) {
+            <div class="flex px-2 py-2">
+                <span class="rounded-xl bg-secondary-maximum-yellow-red px-2 py-1 text-small-text">Popular</span>
+            </div>
+        }
+    </div>
     <div class="flex justify-between">
         <h3 class="px-2 py-2 text-label text-secondary-floral-white">{{ coffee().name }}</h3>
         <span class="rounded-md bg-primary-aero-blue px-2 py-2">{{ coffee().price }}</span>
