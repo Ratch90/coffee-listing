@@ -11,6 +11,6 @@
 
     html,
     body {
-        @apply font-DM h-full w-full bg-primary-eerie-black text-body font-semibold;
+        @apply min-h-full w-full bg-primary-eerie-black font-DM text-body font-semibold;
     }
 }
