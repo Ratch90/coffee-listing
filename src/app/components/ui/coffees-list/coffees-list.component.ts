@@ -1,12 +1,12 @@
 import { Component, input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Coffee } from '../../../interfaces/coffee.interface';
+import { CoffeeCardComponent } from '../coffee-card/coffee-card.component';
 
 @Component({
     selector: 'app-coffees-list',
     templateUrl: './coffees-list.component.html',
     standalone: true,
-    imports: [CommonModule]
+    imports: [CoffeeCardComponent]
 })
 export class CoffeesListComponent {
     coffeesList = input.required<Coffee[]>();
