@@ -1,16 +1,9 @@
 <div class="flex min-h-screen flex-col items-center justify-center">
-    <header class="h-72 w-full bg-cafe bg-cover bg-center bg-no-repeat"></header>
+    <div class="h-72 w-full">
+        <app-header></app-header>
+    </div>
+
     <main class="mx-24 -mt-24 mb-24 rounded-3xl bg-primary-eerie-black-light">
-        <div class="flex flex-col gap-y-8 py-12">
-            <app-coffee-shop-info></app-coffee-shop-info>
-            <section class="flex flex-col items-center justify-center gap-y-12">
-                <app-tabs></app-tabs>
-                @if (coffeesListState() === 'all') {
-                    <app-coffees-list [coffeesList]="allCoffees()"></app-coffees-list>
-                } @else {
-                    <app-coffees-list [coffeesList]="availableCoffees()"></app-coffees-list>
-                }
-            </section>
-        </div>
+        <app-main-content></app-main-content>
     </main>
 </div>
