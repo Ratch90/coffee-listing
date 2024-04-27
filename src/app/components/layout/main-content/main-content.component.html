@@ -1,0 +1,11 @@
+<div class="flex flex-col gap-y-8 py-12">
+    <app-coffee-shop-info></app-coffee-shop-info>
+    <section class="flex flex-col items-center justify-center gap-y-12">
+        <app-tabs></app-tabs>
+        @if (coffeesListState() === 'all') {
+            <app-coffees-list [coffeesList]="allCoffees()"></app-coffees-list>
+        } @else {
+            <app-coffees-list [coffeesList]="availableCoffees()"></app-coffees-list>
+        }
+    </section>
+</div>

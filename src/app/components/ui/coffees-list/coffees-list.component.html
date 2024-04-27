@@ -1,0 +1,7 @@
+@if (coffeesList().length > 0) {
+    <div class="grid gap-x-6 gap-y-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+        @for (coffee of coffeesList(); track coffee.id) {
+            <app-coffee-card [coffee]="coffee"></app-coffee-card>
+        }
+    </div>
+}

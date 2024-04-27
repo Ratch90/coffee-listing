@@ -1,0 +1,18 @@
+<div class="flex justify-center">
+    <div class="flex xs:flex-col xs:gap-y-2 sm:flex-col sm:gap-y-2 md:flex-row md:gap-x-2 lg:flex-row lg:gap-x-2 xl:flex-row xl:gap-x-2">
+        <button
+            class="text-small-label rounded-lg px-3 py-3 text-secondary-floral-white"
+            [ngClass]="{ 'bg-primary-nickel': availabilityState() === 'all' }"
+            (click)="handleCoffeeListStateChange('all')"
+        >
+            All Products
+        </button>
+        <button
+            class="text-small-label rounded-lg px-3 py-3 text-secondary-floral-white"
+            (click)="handleCoffeeListStateChange('available')"
+            [ngClass]="{ 'bg-primary-nickel': availabilityState() === 'available' }"
+        >
+            Available Now
+        </button>
+    </div>
+</div>
