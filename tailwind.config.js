@@ -29,7 +29,15 @@ module.exports = {
             backgroundImage: {
              'cafe': "url('./assets/images/bg-cafe.jpg')",
              'vector': "url('./assets/svg/vector.svg')",
-            }
+            },
+            screens: {
+              'xs': '305px',
+              'sm': '640px',
+              'md': '768px',
+              'lg': '1024px',
+              'xl': '1280px',
+              '2xl': '1536px',
+            },
         }
     },
     plugins: []

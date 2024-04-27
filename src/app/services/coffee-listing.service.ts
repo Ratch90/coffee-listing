@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, input, signal } from '@angular/core';
+import { Injectable, inject, input, signal } from '@angular/core';
 import { Observable, shareReplay } from 'rxjs';
 import { Coffee } from '../interfaces/coffee.interface';
 
@@ -9,7 +9,7 @@ export type CoffeeListState = 'all' | 'available';
     providedIn: 'root'
 })
 export class CoffeeListingService {
-    constructor(private httpClient: HttpClient) {}
+    private httpClient = inject(HttpClient);
 
     private coffeesListStateSignal = signal<CoffeeListState>('all');
 
